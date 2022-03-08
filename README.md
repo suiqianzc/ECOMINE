@@ -1,4 +1,4 @@
-![](https://github.com/suiqianzc/ECOMINE/blob/master/figures/ECOMINE_Logo.png)
+<p align="center"><img width=50% src="https://github.com/suiqianzc/ECOMINE/blob/master/figures/ECOMINE_Logo.png"></p>
 <h2 align="center">Code Library for Universal Multi-sphere Particles</a></h2>
 <p align="center">
     <a href="https://github.com/vsangelidakis/CLUMP/commits/master">
