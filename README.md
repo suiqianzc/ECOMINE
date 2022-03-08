@@ -1,5 +1,5 @@
-<p align="center"><img width=50% src="https://github.com/suiqianzc/ECOMINE/blob/master/figures/ECOMINE_Logo.png"></p>
-<h2 align="center">Code Library for Universal Multi-sphere Particles</a></h2>
+<p align="center"><img width=80% src="https://github.com/suiqianzc/ECOMINE/blob/master/figures/ECOMINE_Logo.png"></p>
+<h2 align="center">A Computation Tool for Assessing the Environmental Impact over the Life of the Mine </a></h2>
 <p align="center">
     <a href="https://github.com/vsangelidakis/CLUMP/commits/master">
     <img src="https://img.shields.io/github/last-commit/vsangelidakis/CLUMP.svg?style=flat-square&logo=github&logoColor=white"
@@ -13,9 +13,7 @@
     <a href="https://opensource.org/licenses/GPL-3.0">
     <img src="https://img.shields.io/badge/license-GPL-blue.svg"
          alt="License">
-    <a href="https://twitter.com/intent/tweet?text=Code Library for Universal Multi-sphere Particles: &url=https%3A%2F%2Fgithub.com%2Fvsangelidakis%2FCLUMP">
-    <img src="https://img.shields.io/twitter/url/https/github.com/vsangelidakis/CLUMP.svg?style=flat-square&logo=twitter"
-         alt="GitHub tweet">
+
 </p>
 <p align="center">
   <a href="#what-CLUMP-does">What CLUMP does</a> •
