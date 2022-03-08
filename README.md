@@ -1,18 +1,15 @@
 <p align="center"><img width=80% src="https://github.com/suiqianzc/ECOMINE/blob/master/figures/ECOMINE_Logo.png"></p>
 <h2 align="center">A Computation Tool for Assessing the Environmental Impact of the Mine </a></h2>
 <p align="center">
-    <a href="https://github.com/vsangelidakis/CLUMP/commits/master">
-    <img src="https://img.shields.io/github/last-commit/vsangelidakis/CLUMP.svg?style=flat-square&logo=github&logoColor=white"
+    <a href="https://github.com/suiqianzc/ECOMINE/commits/master">
+    <img src="https://img.shields.io/github/last-commit/suiqianzc/ECOMINE.svg?style=flat-square&logo=github&logoColor=white"
          alt="GitHub last commit">
-    <a href="https://github.com/vsangelidakis/CLUMP/issues">
-    <img src="https://img.shields.io/github/issues-raw/vsangelidakis/CLUMP.svg?style=flat-square&logo=github&logoColor=white"
+    <a href="https://github.com/suiqianzc/ECOMINE/issues">
+    <img src="https://img.shields.io/github/issues-raw/suiqianzc/ECOMINE.svg?style=flat-square&logo=github&logoColor=white"
          alt="GitHub issues">
-    <a href="https://github.com/vsangelidakis/CLUMP/pulls">
-    <img src="https://img.shields.io/github/issues-pr-raw/vsangelidakis/CLUMP.svg?style=flat-square&logo=github&logoColor=white"
+    <a href="https://github.com/suiqianzc/ECOMINE/pulls">
+    <img src="https://img.shields.io/github/issues-pr-raw/suiqianzc/ECOMINE.svg?style=flat-square&logo=github&logoColor=white"
          alt="GitHub pull requests">
-    <a href="https://opensource.org/licenses/GPL-3.0">
-    <img src="https://img.shields.io/badge/license-GPL-blue.svg"
-         alt="License">
 
 </p>
 <p align="center">
