@@ -56,7 +56,7 @@ The typical workflow to generate a figure with gramm is the following:
 - In the last step, gramm draws the figure, and takes care of all the annoying parts: no need to loop over colors or subplots, colors and legends are generated automatically, axes limits are taken care of, etc.
 
 For example, with gramm, 7 lines of code are enough to create the figure below from the <code>carbig</code> dataset. Here the figure represents the evolution of fuel economy of new cars in time, with number of cylinders indicated by color, and regions of origin separated across subplot columns:
-<https://github.com/piermorel/gramm/blob/master/html/examples_01.png>
+![](https://github.com/piermorel/gramm/blob/master/html/examples_01.png)
 
 ```matlab
 load carbig.mat %Load example dataset about cars
@@ -148,72 +148,72 @@ The code for the following figures and many others is in <code>examples.m</code>
 ### Mapping groups of data to different visual properties
 All the mappings presented below can be combined.
 
-<img src="/html/examples_02.png" alt="" width="800">
+![](https://github.com/piermorel/gramm/blob/master/html/examples_02.png)
 
 ### Relationship between categorical and continuous variables
 
-<img src="/html/examples_03.png" alt="" width="800">
+![](https://github.com/piermorel/gramm/blob/master/html/examples_03.png)
 
 ### Distribution of a continuous variable
 Note that we by using Origin as a faceting variable, we visualize exactly the same quantities as in the figure above.
 
-<img src="/html/examples_05.png" alt="" width="800">
+![](https://github.com/piermorel/gramm/blob/master/html/examples_05.png)
 
 ### Relationship between two continous variables
 
-<img src="/html/examples_06.png" alt="" width="800">
+![](https://github.com/piermorel/gramm/blob/master/html/examples_06.png)
 
 ### 2D densities
 
-<img src="/html/examples_08.png" alt="2D density" width="800">
+![](https://github.com/piermorel/gramm/blob/master/html/examples_08.png)
 
 ### Repeated trajectories
 Here the variable given as Y is a Nx1 cell of 1D arrays containing the individual trajectories. Color is given as a Nx1 cellstr.
 
-<img src="/html/examples_09.png" alt="" width="800">
+![](https://github.com/piermorel/gramm/blob/master/html/examples_09.png)
 
 ### Spike trains
 This example highlights the potential use of gramm for neuroscientific data. Here X is a Nx1 cell containing spike trains collected over N trials. Color is given as a Nx1 cellstr.
 Using <code>stat_bin()</code> it is possible to construct peristimulus time histograms.
 
-<img src="/html/examples_10.png" alt="" width="800">
+![](https://github.com/piermorel/gramm/blob/master/html/examples_10.png)
 
 ### stat_bin() options ###
 
-<img src="/html/examples_13.png" alt="Histograms example" width="800">
+![](https://github.com/piermorel/gramm/blob/master/html/examples_13.png)
 
 ### facet_grid() options ###
 
-<img src="/html/examples_11.png" alt="facet_grid() options" width="800">
+![](https://github.com/piermorel/gramm/blob/master/html/examples_11.png)
 
 ### Custom layouts ###
 
-<img src="/html/examples_26.png" alt="Custom layouts" width="550">
+![](https://github.com/piermorel/gramm/blob/master/html/examples_26.png)
 
 ### Text labels with geom_label() ###
 
-<img src="/html/examples_21.png" alt="geom_label()" width="800">
+![](https://github.com/piermorel/gramm/blob/master/html/examples_21.png)
 
 ### Colormap customization ###
 With <code>set_color_options()</code>
 
-<img src="/html/examples_28.png" alt="Colormaps example" width="800">
+![](https://github.com/piermorel/gramm/blob/master/html/examples_28.png)
 
 ### Continuous colors
 
-<img src="/html/examples_30.png" alt="Continuous colors" width="800">
+![](https://github.com/piermorel/gramm/blob/master/html/examples_30.png)
 
 ### Reordering of categorical variables
 With <code>set_order_options()</code>
 
-<img src="/html/examples_31.png" alt="Reordering" width="800">
+![](https://github.com/piermorel/gramm/blob/master/html/examples_31.png)
 
 
 ### Superimposition of gramm objects on the same axes
 By making calling the update() method after a first draw, the same axes can be reused for another gramm plot.
 Here this allows to plot the whole dataset in the background of each facet.
 
-<img src="/html/examples_25.png" alt="gramm superimposition" width="800">
+![](https://github.com/piermorel/gramm/blob/master/html/examples_25.png)
 
 ## Acknowledgements
 gramm was inspired and/or used code from:
