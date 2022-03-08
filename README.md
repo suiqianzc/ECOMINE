@@ -1,5 +1,5 @@
 <p align="center"><img width=80% src="https://github.com/suiqianzc/ECOMINE/blob/master/figures/ECOMINE_Logo.png"></p>
-<h2 align="center">A Computation Tool for Assessing the Environmental Impact over the Life of the Mine </a></h2>
+<h2 align="center">A Computation Tool for Assessing the Environmental Impact of the Open Pit Mine </a></h2>
 <p align="center">
     <a href="https://github.com/vsangelidakis/CLUMP/commits/master">
     <img src="https://img.shields.io/github/last-commit/vsangelidakis/CLUMP.svg?style=flat-square&logo=github&logoColor=white"
