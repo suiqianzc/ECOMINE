@@ -1,4 +1,4 @@
-<p align="center"><img width=80% src="https://github.com/suiqianzc/ECOMINE/blob/master/figures/ECOMINE_Logo.png"></p>
+<p align="center"><img width=60% src="https://github.com/suiqianzc/ECOMINE/blob/master/figures/ECOMINE_Logo.png"></p>
 <h2 align="center">A Computation Tool for Assessing the Environmental Impact of the Mine </a></h2>
 <p align="center">
     <a href="https://github.com/suiqianzc/ECOMINE/commits/master">
