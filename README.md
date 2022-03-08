@@ -1,4 +1,4 @@
-<p align="center"><img width=30% src="https://github.com/suiqianzc/ECOMINE/blob/master/figures/ECOMINE_logo.png"></p>
+<p align="center">(https://github.com/suiqianzc/ECOMINE/blob/master/figures/ECOMINE_logo.png?raw=true)</p>
 <h2 align="center">Code Library for Universal Multi-sphere Particles</a></h2>
 <p align="center">
     <a href="https://github.com/vsangelidakis/CLUMP/commits/master">
