@@ -1,6 +1,6 @@
 function [NBM, ECGWP] = BlockModel_Computation_Datamine
    
-%% ECOMINE is a framework to compute the energy consumption and global warming potential (GWP) for mining and comminution of open pit mine 
+%% ECOMINE is a framework to compute the energy consumption and global warming potential (GWP) for mining and comminution of open pit mine
 %  Implementation and improvement of Energy consumption and GWP computation based on the approach proposed by Muñoz et al (2014) [1]
 %  This function can be used to calculate the block model from Datamine software
 %  2021 © C. Zhang
