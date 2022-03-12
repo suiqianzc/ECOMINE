@@ -2,7 +2,7 @@
 %  Attention: The number of rock type is a variable in the block model!!!
 %  1. Obtain the number of rock type; 2. Ask user to input the corresponding EV parameters;
 %  3. For weak rocks, if cannot find the corresponding values in 'Comparison of drillability scales' table, we assume the EV = 0.
-%  2021 © C. Zhang
+%  2022 © C. Zhang
 
 function [SECD, num] = Drilling_Specific_Energy(option,RC,numrt,varnm)
 

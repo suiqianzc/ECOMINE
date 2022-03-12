@@ -1,7 +1,7 @@
 %% This function is used to calculate the energy consumption of each process in open pit mine
 %  Processes: 1.Drilling; 2.Blasting; 3.Loading; 4.Hauling; 5.Crushinng; 6.Grinding
 %  [1] Muñoz, J.I.,et al. 2014. International Journal of Mining and Mineral Engineering, 5(1), pp.38-58.DOI: 10.1504/IJMME.2014.058918
-%  2021 © C. Zhang
+%  2022 © C. Zhang
 
 function EC = Energy_Consumption(A,Ev,L,N,nD,LF,Eblast,PI,lt,Nl,mT,S,Rs,Ri,rs,MT,wi,c_out,c_in,g_out,g_in,Mb,Option)
 

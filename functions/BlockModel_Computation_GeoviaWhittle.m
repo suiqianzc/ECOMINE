@@ -2,7 +2,7 @@ function [NBM, ECGWP] = BlockModel_Computation_GeoviaWhittle
 %% ECGWP is a framework to compute the energy consumption and global warming potential (GWP) for open pit mine
 %  Implementation and improvement of Energy consumption and GWP computation based on the approach proposed by Muñoz et al (2014) [1]
 %  This version of the function can be used to calculate the block model from GeoviaWhittle software
-%  2021 © C. Zhang
+%  2022 © C. Zhang
 %  [1] Muñoz, J.I., Guzmán, R.R. and Botín, J.A., 2014. International Journal of Mining and Mineral Engineering, 5(1), pp.38-58.DOI: 10.1504/IJMME.2014.058918
 
 %% The main highlights of this framework

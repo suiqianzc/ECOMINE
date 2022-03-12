@@ -2,7 +2,7 @@
 %  1. Energy consumption and GWP of input source for optimal profile and planar profile;
 %  2. Energy consumption and GWP of each process for optimal profile and planar profile;
 %  3. Energy consumption and GWP of each period for optimal profile and planar profile.
-%  2021 © C. Zhang
+%  2022 © C. Zhang
 
 function Plot_Compare_Optimal_Planar(Optimal, Planar)
 

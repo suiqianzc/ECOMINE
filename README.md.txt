@@ -1,5 +1,5 @@
 <p align="center"><img width=50% src="https://github.com/suiqianzc/ECOMINE/blob/master/figures/ECOMINE_Logo.png"></p>
-<h2 align="center">A Computation Tool to Assess the Environmental Impact of Mines </a></h2>
+<h2 align="center">A Computation Tool for Assessing the Environmental Impact of Mines </a></h2>
 <p align="center">
     <a href="https://github.com/suiqianzc/ECOMINE/commits/master">
     <img src="https://img.shields.io/github/last-commit/suiqianzc/ECOMINE.svg?style=flat-square&logo=github&logoColor=white"

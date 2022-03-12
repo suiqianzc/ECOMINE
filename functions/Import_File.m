@@ -1,6 +1,6 @@
 %% This function is used to import the block model file and computation parameter file to framework
 %  Option1: Datamine; Option2: GeoviaWhittle; Option3: Computation Parameters;
-%  2021 © C. Zhang
+%  2022 © C. Zhang
 
 function Value = Import_File(option, type)
 

@@ -1,6 +1,6 @@
 %% This function is to calculate the theoretical shortest distance between two points in the spatial coordinate system
 %  Reference: https://www.math.usm.edu/lambers/mat169/fall09/lecture17.pdf
-%  2021 © C. Zhang
+%  2022 © C. Zhang
 
 function SAB = Transportation_Distance(Xa,Ya,Za,xb,yb,zb)
 %This function is calculating the distance from point A to point B

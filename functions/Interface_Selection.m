@@ -2,7 +2,7 @@
 %  There are 3 types of interfaces: 1.rock types selection; 2.unit measure selection; 3.metal types selection.
 %  ATTENTION: This framework is guaranteed to work only for files that block attributes as required.
 %  Warning: Please ensure the variable names of the block atributes in the imported file are consistent with the example.
-%  2021 © C. Zhang
+%  2022 © C. Zhang
 
 function [rk, dc, str, dmg, dmt, gmg, gmt, grg, grt] = Interface_Selection(Module, option, var, num)
 
@@ -25,7 +25,7 @@ function [rk, dc, str, dmg, dmt, gmg, gmt, grg, grt] = Interface_Selection(Modul
 
 if Module == 1 %Rock Type Option
     %Display the interface of rock type selection
-    RockType = {'Single Rock Type', 'Multiple Rock Type'};
+    RockType = {'Single Rock Type', 'Multiple Rock Types'};
     [rk,~] = listdlg('PromptString',{'Please select the number of rock type option for the block model.',''},...
         'SelectionMode','single','ListString',RockType);
     %Empty output
