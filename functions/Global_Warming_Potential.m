@@ -19,25 +19,25 @@ function GWP = Global_Warming_Potential(EC_pro,Eblast,EF_fuel,EF_expl,EF_elec,Op
 %	GWP : the global warming potential for each process(kg CO2 eq)
 
 switch Option
-    
+
     case ('Drill')
         GWP = EF_fuel*EC_pro;
-        
+
     case ('Blast')
         GWP = (EC_pro/Eblast)*EF_expl;
-        
+
     case ('Load')
         GWP = EF_fuel*EC_pro;
-        
+
     case ('Haul')
         GWP = EF_fuel*EC_pro;
-        
+
     case ('Crush')
         GWP = (EC_pro/3.6)*EF_elec;
-        
+
     case ('Grind')
         GWP = (EC_pro/3.6)*EF_elec;
-        
+
 end
 
 end

@@ -15,7 +15,7 @@ ModuleType = {'GeoviaWhittle', 'Datamine'};
 [opt,~] = listdlg('PromptString',{'Please select the imported structs come from which module.',''},...
     'SelectionMode','single','ListString',ModuleType);
 switch opt
-    
+
     case 1 %GeoviaWhittle
         %  Collating and sorting data from optimal profile and planar profile
         Name      = cell(10,1);
@@ -96,7 +96,7 @@ switch opt
         %  Convert struct to table
         InputSource_table = struct2table(InputSource);
         Process_table     = struct2table(Process);
-        
+
         %  Compare the number of period for optimal profile to planar profile
         %CASE1
         if size(Optimal.ECGWP,2) > size(Planar.ECGWP,2)
@@ -235,7 +235,7 @@ switch opt
         g(1,2).set_names('color','','x','Years of Mine Production','y',{('Global Warming Potential');('(ton CO2 eq)')});
         g(1,2).set_title({('Cumulative Emissions over the Life of Mine');('(Optimal Profile vs Planar Profile)')},'FontSize',12);
         g.draw();
-        
+
     case 2 %Datamine
         %  Collating and sorting data from optimal profile and planar profile
         Name      = cell(10,1);
@@ -307,7 +307,7 @@ switch opt
         g(2,2).set_names('color','','x','','y',{('Global Warming Potential');('(ton CO2 eq)')});
         g(2,2).set_title({('Global Warming Potential for Each Process and Whole Process');('(Optimal Profile vs Planar Profile)')},'FontSize',12);
         g.draw();
-        
+
 end
 
 disp('Done!')

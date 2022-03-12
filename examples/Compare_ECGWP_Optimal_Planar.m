@@ -4,7 +4,7 @@
 % 1. Optimal pitwalls design method
 % 2. Planar pitwalls design method
 
-%% Running 
+%% Running
 clc; clear; close all
 
 addpath(genpath('../functions'))
@@ -16,6 +16,6 @@ Planar  = load('ECGWP_Planar_GeoviaWhittle');
 
 % Datamine
 % Optimal = load('ECGWP_Optimal_Datamine');
-% Planar  = load('ECGWP_Planar_Datamine'); 
+% Planar  = load('ECGWP_Planar_Datamine');
 
 Plot_Compare_Optimal_Planar(Optimal, Planar)

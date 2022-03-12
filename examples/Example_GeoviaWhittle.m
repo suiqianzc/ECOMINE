@@ -22,7 +22,7 @@
 % o Select "Metal type", here "Copper"
 % o Select "Measure Units", here "Meters"
 
-%% Running 
+%% Running
 clc; clear; close all
 
 addpath(genpath('../functions'))

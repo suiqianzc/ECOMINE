@@ -177,7 +177,7 @@ if Module == 4 %GeoviaWhittle Option
             end
             %Empty output
             rk = []; dc = []; dmg = []; dmt = [];
-            
+
         case ('Multiple')
             %Find the column indexes for fixed variable names of block attributes
             ind_X   = find(string(var.Properties.VariableNames) == "X");
@@ -254,7 +254,7 @@ if Module == 4 %GeoviaWhittle Option
             %Empty output
             rk = []; dc = []; dmg = []; dmt = [];
     end
-    
+
 end
 
 end

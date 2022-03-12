@@ -69,7 +69,7 @@ switch rk_ind
         [~,~,P,~,~,MG,MT,RG,RT] = Interface_Selection(4,'Single',G_V,[]);
         %  Convert table to double type
         BM = table2array(G_V);
-        
+
         %% Screening and assign the corresponding blocks to single rock type
         %  Create cells and exclude air blocks based on block attribute 'sg'
         %  Rock
@@ -89,7 +89,7 @@ switch rk_ind
         waste     = cell(1,1);
         ind_waste = rock{:}(:,P.RRT) > 0;
         waste{:}  = rock{:}(ind_waste,:);
-        
+
         %% Assign values to the corresponding period
         %  Identify the number of periods for mine based on block attribute 'mined_period_a_value'
         per = table2array(unique(G_V(:,P.Year)));
@@ -107,7 +107,7 @@ switch rk_ind
             ind_pw = waste{:}(:,P.Year) == per(m);
             p_w{m} = waste{:}(ind_pw,:);
         end
-        
+
         %% Attention: Select correct unit measure of block coordinates before executing computation
         %  This framework provides two common units of coordinates: meters and feet
         %  (1)S_op: ore to plant; (2)S_wd: waste to dump; (3)S_oup:ore(non-mineralised) to plant; (4)S_wud:waste(non-mineralised) to dump
@@ -137,7 +137,7 @@ switch rk_ind
                     end
                 end
         end
-        
+
         %% Computing the energy consumption and GWP
         %  Create energy consumption and GWP cells for ore
         %  Column:1-drill,2-blast,3-load,4-haul,5-crush,6-grind
@@ -290,7 +290,7 @@ switch rk_ind
             %GWP
             GWP(m,1) = Drill(m,2)+Blast(m,2)+Load(m,2)+Haul(m,2)+Crush(m,2)+Grind(m,2);
         end
-        
+
         %% Build 'NBM' struct
         NBM = struct;
         %  Create cells of energy consumption and GWP for 1-ore(o_ec/gwp+ou_ec/gwp) and 2-waste(w_ec/gwp+wu_ec/gwp)
@@ -325,7 +325,7 @@ switch rk_ind
             NBM(m).Energy_Consumption       = [enecon{m,1} ; enecon{m,2}];
             NBM(m).Global_Warming_Potential = [glowarpot{m,1} ; glowarpot{m,2}];
         end
-        
+
     case 2
         %% Multiple Rock Types
         %  BM file
@@ -338,7 +338,7 @@ switch rk_ind
         [~,~,P,~,~,MG,MT,RG,RT] = Interface_Selection(4,'Multiple',G_V,mn_rk);
         %  Convert table to double type
         BM = table2array(G_V);
-        
+
         %% Screening and assign the corresponding blocks to multiple rock types
         %  Create cells and exclude air blocks based on block attribute 'sg'
         %  Rock
@@ -374,7 +374,7 @@ switch rk_ind
             wu_ton{i,1}   = waste{i,1}(:,P.BT) - waste{i,1}(:,P.RRT(i));
             waste_nm{i,1} = [waste{i,1} wu_ton{i,1}];
         end
-        
+
         %% Assign values to the corresponding period
         %  Identify the number of periods for mine based on block attribute 'mined_period_a_value'
         per = table2array(unique(G_V(:,P.Year)));
@@ -402,7 +402,7 @@ switch rk_ind
                 p_wu{m,i} = waste_nm{i,1}(ind_pwu,:);
             end
         end
-        
+
         %% Attention: Select correct unit measure of block coordinates before executing computation
         %  Create cells
         S_op  = cell(size(per,1),mn_rk);
@@ -435,7 +435,7 @@ switch rk_ind
                     end
                 end
         end
-        
+
         %% Computing the energy consumption and GWP
         %  Create energy consumption and GWP cells of each unit for ore
         %  3rd-column:1-drill,2-blast,3-load,4-haul,5-crush,6-grind
@@ -664,7 +664,7 @@ switch rk_ind
                 GWP(m,1) = Drill(m,2)+Blast(m,2)+Load(m,2)+Haul(m,2)+Crush(m,2)+Grind(m,2);
             end
         end
-        
+
         %% Build 'NBM' struct
         NBM = struct;
         %  Merge each rock type for ore and waste

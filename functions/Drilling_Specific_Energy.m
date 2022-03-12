@@ -18,18 +18,18 @@ function [SECD, num] = Drilling_Specific_Energy(option,RC,numrt,varnm)
 
 
 switch option
-    
+
     case ('Datamine')
-        
+
         RC_Tit = 'Please input specific energy consumption of drilling for each rock type';
         RC_Str = compose("Rock_Code%d", RC(1:size(RC,1)));
         RC_par = inputdlg(RC_Str, RC_Tit, [1,length(RC_Tit)+50]); %Input drilling specific energy for each rock type
         SECD   = str2double(RC_par); %Convert strings to double
         %Empty output
         num = [];
-        
+
     case ('GeoviaWhittle')
-        
+
         switch numrt
             case ('Single') %Single rock type
                 num = 1;
@@ -37,7 +37,7 @@ switch option
                 RC_Str = compose("RockType%d", num);
                 RC_par = inputdlg(RC_Str, RC_Tit, [1,length(RC_Tit)+50]); %Input drilling specific energy for single rock type
                 SECD   = str2double(RC_par); %Convert strings to double
-                
+
             case ('Multiple') %Multiple rock type
                 %%Determine the number of rock types
                 %ORE
@@ -70,7 +70,7 @@ switch option
                     error('Wrong imported Block Model File!')
                 end
         end
-        
+
 end
 
 end

@@ -34,25 +34,25 @@ function EC = Energy_Consumption(A,Ev,L,N,nD,LF,Eblast,PI,lt,Nl,mT,S,Rs,Ri,rs,MT
 %	EC : the energy consumption for each process(MJ)
 
 switch Option
-    
+
     case ('Drill')
         EC = ((A*(Ev*10^-6)*L*N)./((nD/100).*Mb)).*Mb;
-        
+
     case ('Blast')
         EC = LF*Eblast*Mb;
-        
+
     case ('Load')
         EC = ((PI*lt)/((Nl/100)*mT))*Mb;
-        
+
     case ('Haul')
         EC = ((9.81*S*(mT*(rs/100)+((Rs+Ri)/100)*(2*MT-mT)))/mT).*Mb;
-        
+
     case ('Crush')
         EC = (3.6*10*wi*((1/sqrt(c_out)-(1/sqrt(c_in)))))*Mb;
-        
+
     case ('Grind')
         EC = (3.6*10*wi*((1/sqrt(g_out)-(1/sqrt(g_in)))))*Mb;
-        
+
 end
 
 end
