@@ -1,4 +1,4 @@
-%% Example comparing the energy consumption and global warming potential for：
+%% Example comparing the energy consumption and global warming potential for:
 % 2022 © C. Zhang
 
 % 1. Optimal pitwalls design method

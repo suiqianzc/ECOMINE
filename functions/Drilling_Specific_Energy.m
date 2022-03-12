@@ -13,7 +13,7 @@ function [SECD, num] = Drilling_Specific_Energy(option,RC,numrt,varnm)
 %	varnm  : The variable name of the block model file (GeoviaWhittle attribute)
 
 % Output
-%   SECD : The specific energy consumption of drilling for each rock type
+%	SECD : The specific energy consumption of drilling for each rock type
 %	num  : The number of rock types for rk_mill/rejected_tonnage attributes
 
 
