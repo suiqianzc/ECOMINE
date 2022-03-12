@@ -1,13 +1,16 @@
+%% Script to visualise the spatial distribution for energy consumption and global warming potential of each block:
+% 2022 © C. Zhang
+
 clc; clear; close all
 
-option=1;	        % 1: Plot 3D alphaShape
+option=1;	% 1: Plot 3D alphaShape
 			% 2: Plot 2D alphaShapes together
 			% 3: Plot 2D alphaShapes separately
 			% 4: Plot all of the above
 
 %% Load data & separate x,y,z and Energy Consumption and Global Warming Potential
-%table=readtable('XYZ_ECGWP_Datamine.xlsx'); %Datamine
- table=readtable('Example_XYZ_ECGWP_GeoviaWhittle.xlsx'); %GeoviaWhittle
+%table=readtable('Example_NewBlockModel_Datamine.xlsx'); %Datamine
+table=readtable('Example_NewBlockModel_GeoviaWhittle.xlsx'); %GeoviaWhittle
 %Find the column indexes for EC and GWP 
 ind_EC=find(string(table.Properties.VariableNames) == "Energy_Consumption");
 ind_GWP=find(string(table.Properties.VariableNames) == "Global_Warming_Potential");
