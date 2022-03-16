@@ -1,8 +1,6 @@
 %% This function is used to calculate the global warming potential(GWP) of each process in open pit mine
 %  Processes: 1.Drilling; 2.Blasting; 3.Loading; 4.Hauling; 5.Crushinng; 6.Grinding
 %  [1] Muñoz, J.I.,et al. 2014. International Journal of Mining and Mineral Engineering, 5(1), pp.38-58.DOI: 10.1504/IJMME.2014.058918
-%  [2] Islam, K., et al. 2020.Resources, Conservation and Recycling, 154, pp.1-13. https://doi.org/10.1016/j.resconrec.2019.104630
-%  [3] Chen, L.,et al. 2019. Journal of Economic Structures, 8(1), pp.1-12. https://doi.org/10.1186/s40008-019-0142-6
 %  2022 © C. Zhang
 
 function GWP = Global_Warming_Potential(EC_pro,Eblast,EF_fuel,EF_expl,EF_elec,Option)
