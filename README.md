@@ -65,7 +65,7 @@ ECOMINE comprises the following modules:
   - Load NewBlockModel_GeoviaWhittle file 
   - Visualise results
   
-<p align="center"><img width=100% src="https://github.com/suiqianzc/ECOMINE/blob/master/figures/ECGWP_UPL_Model.png"></p>   
+<p align="center"><img width=100% src="https://github.com/suiqianzc/ECOMINE/blob/master/figures/ECGWP_spatial_distribution_UPL.png"></p>   
 
 - __Module III__
   - Load ECGWP_Optimal/Planar_GeoviaWhittle.mat
