@@ -10,11 +10,11 @@ function [SECD, num] = Drilling_Specific_Energy(option,RC,numrt,varnm)
 %   option : The code for the execution of the module
 %   RC     : The rock code for each rock type in the block model (Datamine attribute)
 %   numrt  : The rock type option in the block model (GeoviaWhittle attribute)
-%	varnm  : The variable name of the block model file (GeoviaWhittle attribute)
+%   varnm  : The variable name of the block model file (GeoviaWhittle attribute)
 
 % Output
-%	SECD : The specific energy consumption of drilling for each rock type
-%	num  : The number of rock types for rk_mill/rejected_tonnage attributes
+%   SECD : The specific energy consumption of drilling for each rock type
+%   num  : The number of rock types for rk_mill/rejected_tonnage attributes
 
 
 switch option

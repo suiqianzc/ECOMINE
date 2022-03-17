@@ -4,9 +4,9 @@
 clc; clear; close all
 
 option=1;	% 1: Plot 3D alphaShape
-% 2: Plot 2D alphaShapes together
-% 3: Plot 2D alphaShapes separately
-% 4: Plot all of the above
+            % 2: Plot 2D alphaShapes together
+            % 3: Plot 2D alphaShapes separately
+            % 4: Plot all of the above
 
 %% Load data & separate x,y,z and Energy Consumption and Global Warming Potential
 %table=readtable('Example_NewBlockModel_Datamine.xlsx'); %Datamine

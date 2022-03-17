@@ -7,7 +7,7 @@ function EC = Energy_Consumption(A,Ev,L,N,nD,LF,Eblast,PI,lt,Nl,mT,S,Rs,Ri,rs,MT
 
 % Input
 %   A      : the area of drilling section(cm2)
-%	Ev     : the drilling specific energy for each rock type(MJ/m3)
+%   Ev     : the drilling specific energy for each rock type(MJ/m3)
 %   L      : the drilling length of each drill hole(cm)
 %   N      : the number of drillhole in each block
 %   nD     : the drilling efficiency(%)
