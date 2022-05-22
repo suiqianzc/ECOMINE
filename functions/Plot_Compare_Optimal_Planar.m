@@ -13,9 +13,9 @@ function Plot_Compare_Optimal_Planar(Optimal, Planar)
 %  Create the interface
 ModuleType = {'GeoviaWhittle', 'Datamine'};
 [opt,~] = listdlg('PromptString',{'Please select the imported structs come from which module.',''},...
-    'SelectionMode','single','ListString',ModuleType);
-switch opt
+                  'SelectionMode','single','ListString',ModuleType);
 
+switch opt
     case 1 %GeoviaWhittle
         %  Collating and sorting data from optimal profile and planar profile
         Name      = cell(10,1);
@@ -86,19 +86,19 @@ switch opt
         %  Build 'Process' struct
         Process           = struct;
         Process.Category  = [Name(4,1);Name(5,1);Name(6,1);Name(7,1);Name(8,1);Name(9,1);Name(10,1);...
-            Name(4,1);Name(5,1);Name(6,1);Name(7,1);Name(8,1);Name(9,1);Name(10,1)];
+                             Name(4,1);Name(5,1);Name(6,1);Name(7,1);Name(8,1);Name(9,1);Name(10,1)];
         Process.Type      = [Type1(4,1);Type1(5,1);Type1(6,1);Type1(7,1);Type1(8,1);Type1(9,1);Type1(10,1);...
-            Type2(4,1);Type2(5,1);Type2(6,1);Type2(7,1);Type2(8,1);Type2(9,1);Type2(10,1)];
+                             Type2(4,1);Type2(5,1);Type2(6,1);Type2(7,1);Type2(8,1);Type2(9,1);Type2(10,1)];
         Process.EC_Value  = [EC_Value(4,1);EC_Value(5,1);EC_Value(6,1);EC_Value(7,1);EC_Value(8,1);EC_Value(9,1);EC_Value(10,1);...
-            EC_Value(4,2);EC_Value(5,2);EC_Value(6,2);EC_Value(7,2);EC_Value(8,2);EC_Value(9,2);EC_Value(10,2)];
+                             EC_Value(4,2);EC_Value(5,2);EC_Value(6,2);EC_Value(7,2);EC_Value(8,2);EC_Value(9,2);EC_Value(10,2)];
         Process.GWP_Value = [GWP_Value(4,1);GWP_Value(5,1);GWP_Value(6,1);GWP_Value(7,1);GWP_Value(8,1);GWP_Value(9,1);GWP_Value(10,1);...
-            GWP_Value(4,2);GWP_Value(5,2);GWP_Value(6,2);GWP_Value(7,2);GWP_Value(8,2);GWP_Value(9,2);GWP_Value(10,2)];
+                             GWP_Value(4,2);GWP_Value(5,2);GWP_Value(6,2);GWP_Value(7,2);GWP_Value(8,2);GWP_Value(9,2);GWP_Value(10,2)];
         %  Convert struct to table
         InputSource_table = struct2table(InputSource);
         Process_table     = struct2table(Process);
 
         %  Compare the number of period for optimal profile to planar profile
-        %CASE1
+        %  CASE1
         if size(Optimal.ECGWP,2) > size(Planar.ECGWP,2)
             P_EC  = zeros(size(Optimal.ECGWP,2),2);
             P_GWP = zeros(size(Optimal.ECGWP,2),2);
@@ -118,7 +118,7 @@ switch opt
                 P_GWP(n,2) = temp(n,2);
             end
         end
-        %CASE2
+        %  CASE2
         if size(Optimal.ECGWP,2) < size(Planar.ECGWP,2)
             P_EC  = zeros(size(Planar.ECGWP,2),2);
             P_GWP = zeros(size(Planar.ECGWP,2),2);
@@ -138,7 +138,7 @@ switch opt
                 P_GWP(n,2) = Planar.ECGWP(n).Total_GWP;
             end
         end
-        %CASE3
+        %  CASE3
         if size(Optimal.ECGWP,2) == size(Planar.ECGWP,2)
             P_EC  = zeros(size(Optimal.ECGWP,2),2);
             P_GWP = zeros(size(Optimal.ECGWP,2),2);
@@ -178,7 +178,7 @@ switch opt
         Period_GWP.Year      = [(1:size(P_GWP,1))';(1:size(P_GWP,1))'];
         Period_GWP.Type      = [(repmat({'Optimal'},size(P_GWP,1),1));(repmat({'Planar'},size(P_GWP,1),1))];
         Period_GWP.GWP_Value = [P_GWP(:,1);P_GWP(:,2)];
-        Period_GWP.CUM_GWP    = [cum_gwp(:,1);cum_gwp(:,2)];
+        Period_GWP.CUM_GWP   = [cum_gwp(:,1);cum_gwp(:,2)];
         %  Convert struct to table
         Period_EC_table  = struct2table(Period_EC);
         Period_GWP_table = struct2table(Period_GWP);
@@ -276,13 +276,13 @@ switch opt
         %  Build 'Process' struct
         Process           = struct;
         Process.Category  = [Name(4,1);Name(5,1);Name(6,1);Name(7,1);Name(8,1);Name(9,1);Name(10,1);...
-            Name(4,1);Name(5,1);Name(6,1);Name(7,1);Name(8,1);Name(9,1);Name(10,1)];
+                             Name(4,1);Name(5,1);Name(6,1);Name(7,1);Name(8,1);Name(9,1);Name(10,1)];
         Process.Type      = [Type1(4,1);Type1(5,1);Type1(6,1);Type1(7,1);Type1(8,1);Type1(9,1);Type1(10,1);...
-            Type2(4,1);Type2(5,1);Type2(6,1);Type2(7,1);Type2(8,1);Type2(9,1);Type2(10,1)];
+                             Type2(4,1);Type2(5,1);Type2(6,1);Type2(7,1);Type2(8,1);Type2(9,1);Type2(10,1)];
         Process.EC_Value  = [EC_Value(4,1);EC_Value(5,1);EC_Value(6,1);EC_Value(7,1);EC_Value(8,1);EC_Value(9,1);EC_Value(10,1);...
-            EC_Value(4,2);EC_Value(5,2);EC_Value(6,2);EC_Value(7,2);EC_Value(8,2);EC_Value(9,2);EC_Value(10,2)];
+                             EC_Value(4,2);EC_Value(5,2);EC_Value(6,2);EC_Value(7,2);EC_Value(8,2);EC_Value(9,2);EC_Value(10,2)];
         Process.GWP_Value = [GWP_Value(4,1);GWP_Value(5,1);GWP_Value(6,1);GWP_Value(7,1);GWP_Value(8,1);GWP_Value(9,1);GWP_Value(10,1);...
-            GWP_Value(4,2);GWP_Value(5,2);GWP_Value(6,2);GWP_Value(7,2);GWP_Value(8,2);GWP_Value(9,2);GWP_Value(10,2)];
+                             GWP_Value(4,2);GWP_Value(5,2);GWP_Value(6,2);GWP_Value(7,2);GWP_Value(8,2);GWP_Value(9,2);GWP_Value(10,2)];
         %  Convert struct to table
         InputSource_table = struct2table(InputSource);
         Process_table     = struct2table(Process);

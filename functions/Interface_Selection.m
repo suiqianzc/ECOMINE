@@ -26,8 +26,8 @@ function [rk, dc, str, dmg, dmt, gmg, gmt, grg, grt] = Interface_Selection(Modul
 if Module == 1 %Rock Type Option
     %Display the interface of rock type selection
     RockType = {'Single Rock Type', 'Multiple Rock Types'};
-    [rk,~] = listdlg('PromptString',{'Please select the number of rock type option for the block model.',''},...
-        'SelectionMode','single','ListString',RockType);
+    [rk,~]   = listdlg('PromptString',{'Please select the number of rock type option for the block model.',''},...
+                       'SelectionMode','single','ListString',RockType);
     %Empty output
     dc = []; str = []; dmg = []; dmt = []; gmg = []; gmt = []; grg = []; grt = [];
 end
@@ -35,8 +35,8 @@ end
 if Module == 2 %Unit Measure Option
     %Display the interface for unit measure selection of distance
     UnitMeasure = {'Feet', 'Meters'};
-    [dc,~] = listdlg('PromptString',{'Please select the appropriate unit measure for distance.',''},...
-        'SelectionMode','single','ListString',UnitMeasure);
+    [dc,~]      = listdlg('PromptString',{'Please select the appropriate unit measure for distance.',''},...
+                          'SelectionMode','single','ListString',UnitMeasure);
     %Empty output
     rk = []; str = []; dmg = []; dmt = []; gmg = []; gmt = []; grg = []; grt = [];
 end
