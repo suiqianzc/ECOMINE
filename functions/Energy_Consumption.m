@@ -1,4 +1,4 @@
-%% This function is used to calculate the energy consumption of each process in open pit mine
+%% This function is used to calculate the energy consumption for ore/waste blocks of each process in open pit mine
 %  Processes: 1.Drilling; 2.Blasting; 3.Loading; 4.Hauling; 5.Crushinng; 6.Grinding
 %  [1] Muñoz, J.I.,et al. 2014. International Journal of Mining and Mineral Engineering, 5(1), pp.38-58.DOI: 10.1504/IJMME.2014.058918
 %  2022 © C. Zhang
@@ -17,21 +17,21 @@ function EC = Energy_Consumption(A,Ev,L,N,nD,LF,Eblast,PI,lt,Nl,mT,S,Rs,Ri,rs,MT
 %   lt     : the average cycle time to meet filling capacity of truck using loader(seconds)
 %   Nl     : the loader efficiency(%)
 %   mT     : the filling capacity of the truck(tonnes)
-%	S      : the distance of the ith block from mine site to processing plant or waste dump(km)
+%   S      : the distance of the ith block from mine site to processing plant or waste dump(km)
 %   Rs     : the rolling resistance of the surface(%)
 %   Ri     : the internal resistance of the truck(%)
 %   rs     : the ramp slope(%)
 %   MT     : the mass of loaded truck(tonnes)
-%   wi     : Bond Work Index(kWh/ton)
+%   wi     : the Bond Work Index(kWh/ton)
 %   c_in   : the crushing entry material size(microns)
 %   c_out  : the crushing exit material size(microns)
 %   g_in   : the grinding entry material size(microns)
 %   g_out  : the grinding exit material size(microns)
-%	Mb     : the tonnage of ore/waste block(ton)
+%   Mb     : the tonnage of ore/waste block(ton)
 %   Option : the different process in open-pit mining
 
 % Output
-%	EC : the energy consumption for each process(MJ)
+%   EC     : the energy consumption for ore/waste blocks of each process(MJ)
 
 switch Option
 

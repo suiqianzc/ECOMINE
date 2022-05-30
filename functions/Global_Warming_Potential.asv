@@ -20,8 +20,8 @@ function GWP = Global_Warming_Potential(EC_pro,Eblast,EF_fuel,EF_expl,EF_elec,wf
 %   wf_b3   : the energy consumption of electricity as a proportion for hauling(%)
 %   wf_a4   : the energy consumption of fuel as a proportion for crushing(%)
 %   wf_b4   : the energy consumption of electricity as a proportion for crushing(%)
-%   wf_a5   : the energy consumption of fuel as a proportion for grinding(%)
-%   wf_b5   : the energy consumption of electricity as a proportion for grinding(%)
+%   wf_a5   : the energy consumption of fuel as a proportion for total energy consumption ofdrilling(%)
+%   wf_b5   : the energy consumption of electricity as a proportion for total energy consumption of drilling(%)
 
 % Output
 %   GWP     : the global warming potential for ore/waste blocks of each process(kg CO2 eq)
