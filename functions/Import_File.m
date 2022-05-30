@@ -9,7 +9,7 @@ function Value = Import_File(option, type)
 %   type   : The rock types option for the imported file(GeoviaWhittle input argument)
 
 % Output
-%	Value : The data of the imported file
+%   Value  : The data of the imported file
 
 switch option
 
@@ -17,8 +17,8 @@ switch option
 
         %Open specific folder location of block model file
         [datamine.filename, pathname] = uigetfile('*.csv','Select the block model file from BM_File\Datamine folder');
-        pathname          = string(pathname); %The position of selected file
-        datamine.filename = string(datamine.filename); %The selected block model file to be calculated
+        pathname                      = string(pathname); 
+        datamine.filename             = string(datamine.filename); 
 
         if isequal(datamine.filename,0)||isequal(pathname,0)
             return
@@ -36,8 +36,8 @@ switch option
 
                 %Open specific folder location of block model file
                 [geoviawhittle.filename, pathname] = uigetfile('*.csv','Select the block model file from BM_File\GeoviaWhittle\Single folder');
-                pathname               = string(pathname); %The position of selected file
-                geoviawhittle.filename = string(geoviawhittle.filename); %The selected block model file to be calculated
+                pathname                           = string(pathname); 
+                geoviawhittle.filename             = string(geoviawhittle.filename);
 
                 if isequal(geoviawhittle.filename,0)||isequal(pathname,0)
                     return
@@ -51,8 +51,8 @@ switch option
 
                 %Open specific folder location of block model file
                 [geoviawhittle.filename, pathname] = uigetfile('*.csv','Select the block model file from BM_File\GeoviaWhittle\Multiple folder');
-                pathname               = string(pathname); %The position of selected file
-                geoviawhittle.filename = string(geoviawhittle.filename); %The selected block model file to be calculated
+                pathname                           = string(pathname); 
+                geoviawhittle.filename             = string(geoviawhittle.filename); 
 
                 if isequal(geoviawhittle.filename,0)||isequal(pathname,0)
                     return
@@ -67,8 +67,8 @@ switch option
 
         %Open specific folder location of computation parameter file
         [para.filename, pathname] = uigetfile('*.xlsx','Select the computation parameter file from CP_File folder');
-        pathname          = string(pathname);
-        para.filename = string(para.filename);
+        pathname                  = string(pathname);
+        para.filename             = string(para.filename);
 
         if isequal(para.filename,0)||isequal(pathname,0)
             return
