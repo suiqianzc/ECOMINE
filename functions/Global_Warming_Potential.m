@@ -11,7 +11,6 @@ function GWP = Global_Warming_Potential(EC_pro,Eblast,EF_fuel,EF_expl,EF_elec,wf
 %   EF_fuel : the CO2 emission factor when 1 MJ of fuel burned(kg CO2 eq/MJ)
 %   EF_expl : the CO2 emission factor of 1 kg industrial explosives blasted(kg CO2 eq/kg)
 %   EF_elec : the CO2 emission factor of 1kWh electricity consumed(kg CO2 eq/kWh)
-%   Option  : the different process in open-pit mining
 %   wf_a1   : the energy consumption of fuel as a proportion for drilling(%) 
 %   wf_b1   : the energy consumption of electricity as a proportion for drilling(%)
 %   wf_a2   : the energy consumption of fuel as a proportion for loading(%)
@@ -22,6 +21,7 @@ function GWP = Global_Warming_Potential(EC_pro,Eblast,EF_fuel,EF_expl,EF_elec,wf
 %   wf_b4   : the energy consumption of electricity as a proportion for crushing(%)
 %   wf_a5   : the energy consumption of fuel as a proportion for grinding(%)
 %   wf_b5   : the energy consumption of electricity as a proportion for grinding(%)
+%   Option  : the different process in open-pit mining
 
 % Output
 %   GWP     : the global warming potential for ore/waste blocks of each process(kg CO2 eq)
