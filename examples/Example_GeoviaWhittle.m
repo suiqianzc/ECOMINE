@@ -7,7 +7,7 @@
 %% 1. Steps for Single Rock Type
 % o Click Run to start the example
 % o Select "Single Rock Type"
-% o Select input Block Model file "\examples\Example_GeoviaWhittle_SingleRock_OptimalProfile_BlockModel"
+% o Select input Block Model file "\examples\Example_GeoviaWhittle_SingleRock_PlanarProfile_BlockModel"
 % o Select Computational Parameters file "\examples\Example_GeoviaWhittle_SingleRock_ComputationParameters"
 % o Input specific energy consumption of drilling to 160 MJ/m3
 % o Select "Metal type", here "Gold"
@@ -16,7 +16,7 @@
 %% 2. Steps for Multiple Rock Types
 % o Click Run to start the example
 % o Select "Multiple Rock Types"
-% o Select input Block Model file "\examples\Example_GeoviaWhittle_MultipleRock_OptimalProfile_BlockModel"
+% o Select input Block Model file "\examples\Example_GeoviaWhittle_MultipleRock_PlanarProfile_BlockModel"
 % o Select Computational Parameters file "\examples\Example_GeoviaWhittle_MultipleRock_ComputationParameters"
 % o Input specific energy consumption of drilling for Rock1 and Rock2 to 148 MJ/m3 and 112 MJ/m3 respectively
 % o Select "Metal type", here "Copper"
