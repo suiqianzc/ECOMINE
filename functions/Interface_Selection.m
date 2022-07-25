@@ -114,8 +114,6 @@ if Module == 4 %GeoviaWhittle Option
             ind_sg  = find(string(var.Properties.VariableNames) == "sg");
             ind_vf  = find(string(var.Properties.VariableNames) == "volume_factor");
             ind_mp  = find(string(var.Properties.VariableNames) == 'mined_period_a_value');
-            ind_ou  = find(string(var.Properties.VariableNames) == 'ore_unmineralised');
-            ind_wu  = find(string(var.Properties.VariableNames) == 'waste_unmineralised');
             %Build struct1
             str      = struct;
             str.X    = ind_X;
@@ -131,8 +129,6 @@ if Module == 4 %GeoviaWhittle Option
             str.RMT  = ind_rmt;
             str.RRT  = ind_rrt;
             str.Year = ind_mp;
-            str.OU   = ind_ou;
-            str.WU   = ind_wu;
             %Create interface
             Metal = {'Gold','Copper','Iron','Silver','Zinc','Aluminium','Uranium'};
             [Type,~] = listdlg('PromptString',{'Select metal type for the block model.',''},'SelectionMode','single','ListString',Metal);
