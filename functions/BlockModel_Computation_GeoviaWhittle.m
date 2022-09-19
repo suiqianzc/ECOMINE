@@ -687,13 +687,14 @@ g(1,2).set_title('Cumulative Emissions over the Life of Mine','FontSize',16);
 g.draw();
 
 %% Export 'NBM' structure (optional)
-for n = 1 : size(NBM,2)
-    temp   = NBM(n);
-    Period = temp.Period;
-    temp   = rmfield(temp,'Period');
-    writetable(struct2table(temp),'NewBlockModel_GeoviaWhittle.xlsx','sheet',Period)
-end
-clearvars temp
+% for n = 1 : size(NBM,2)
+%     temp   = NBM(n);
+%     Period = temp.Period;
+%     temp   = rmfield(temp,'Period');
+%     writetable(struct2table(temp),'NewBlockModel_GeoviaWhittle.xlsx','sheet',Period)
+% end
+% clearvars temp
+%
 %  Alternative: If user want to put all data in one sheet the following code can do this.
 %  for n = 1 : size(NBM,2)
 %      temp1  = NBM(n);

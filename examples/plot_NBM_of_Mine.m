@@ -22,23 +22,23 @@ P=data(:,1:3);
 x=P(:,1);
 y=P(:,2);
 z=P(:,3);
-%EC=data(:,ind_EC)/1e6; %Energy Consumption
-GWP=data(:,ind_GWP)/1e3; %Global Warming Potential
+EC=data(:,ind_EC)/1e6; %Energy Consumption
+%GWP=data(:,ind_GWP)/1e3; %Global Warming Potential
 %% 3D scatter plot: Plotted in all cases
 figure
-%scatter3(x,y,z,5,EC,'filled') %Energy Consumption
-scatter3(x,y,z,5,GWP,'filled') %Global Warming Potential
+scatter3(x,y,z,5,EC,'filled') %Energy Consumption
+%scatter3(x,y,z,5,GWP,'filled') %Global Warming Potential
 box on %; grid on
 % axis off
 axis equal
 view(3)
 
 cb=colorbar;
-%cb.Label.String = "Energy Consumption (TJ)";
-cb.Label.String = "Global Warming Potential (ton CO2 eq)";
+cb.Label.String = "Energy Consumption (TJ)";
+%cb.Label.String = "Global Warming Potential (ton CO2 eq)";
 cb.Label.Rotation=90;
-%colormap(plasma) %Energy Consumption
-colormap(viridis) %Global Warming Potential
+colormap(plasma) %Energy Consumption
+%colormap(viridis) %Global Warming Potential
 
 % Get limits of the 3D scatter plot
 lim_X=xlim;
@@ -62,8 +62,8 @@ if option==1 || option==4
     tri=alphaTriangulation(shp3D);
 
     figure
-    %scatter3(x,y,z,2,EC,'filled') % Here I plot the points just for comparison
-    scatter3(x,y,z,2,GWP,'filled')
+    scatter3(x,y,z,2,EC,'filled') % Here I plot the points just for comparison
+    %scatter3(x,y,z,2,GWP,'filled')
     hold on; box on %; grid off
     % axis off
     axis equal
@@ -73,26 +73,26 @@ if option==1 || option==4
     ylim(lim_Y) % Apply same Y limits as in the scatter plot above
     zlim(lim_Z) % Apply same Z limits as in the scatter plot above
 
-    %patch('Vertices',P,'Faces',tri,'FaceVertexCData',EC,'FaceColor','interp','EdgeColor','none','EdgeAlpha',0.05,'FaceAlpha',0.5);
-    patch('Vertices',P,'Faces',tri,'FaceVertexCData',GWP,'FaceColor','interp','EdgeColor','k','EdgeAlpha',0.05,'FaceAlpha',0.5);
+    patch('Vertices',P,'Faces',tri,'FaceVertexCData',EC,'FaceColor','interp','EdgeColor','none','EdgeAlpha',0.05,'FaceAlpha',0.5);
+    %patch('Vertices',P,'Faces',tri,'FaceVertexCData',GWP,'FaceColor','interp','EdgeColor','none','EdgeAlpha',0.05,'FaceAlpha',0.5);
     % Note: you can set (...,'EdgeColor','k') if you want to show e.g. black edge lines
     %	FaceAlpha controls the transparency of the faces
     %	EdgeAlpha controls the transparency of the edges
 
     cb=colorbar;
-    %cb.Label.String = "Energy Consumption (TJ)";
-    cb.Label.String = "Global Warming Potential (ton CO2 eq)";
+    cb.Label.String = "Energy Consumption (TJ)";
+    %cb.Label.String = "Global Warming Potential (ton CO2 eq)";
     cb.Label.Rotation=90;
-    %colormap(plasma) %Energy Consumption
-    colormap(viridis) %Global Warming Potential
+    colormap(plasma) %Energy Consumption
+    %colormap(viridis) %Global Warming Potential
     view(3)
 end
 
 %% Isolate 1 elevation, e.g. z=6400 and generate 2D alphaShape
 if option==2 || option==4
     figure
-    %scatter3(x,y,z,2,EC,'filled') % Here I plot the points just for comparison
-    scatter3(x,y,z,2,GWP,'filled')
+    scatter3(x,y,z,2,EC,'filled') % Here I plot the points just for comparison
+    %scatter3(x,y,z,2,GWP,'filled')
     hold on; box on %; grid on
     % axis off
     axis equal
@@ -103,17 +103,17 @@ if option==2 || option==4
     zlim(lim_Z) % Apply same Z limits in all 2D sections
 
     cb=colorbar;
-    %cb.Label.String = "Energy Consumption (TJ)";
-    cb.Label.String = "Global Warming Potential (ton CO2 eq)";
+    cb.Label.String = "Energy Consumption (TJ)";
+    %cb.Label.String = "Global Warming Potential (ton CO2 eq)";
     cb.Label.Rotation=90;
-    %colormap(plasma) %Energy Consumption
-    colormap(viridis) %Global Warming Potential
+    colormap(plasma) %Energy Consumption
+    %colormap(viridis) %Global Warming Potential
 
     for elevation=[min(temp):step:max(temp)]
         ind=(z==elevation); % indices of points with the elevation of this iteration
         p=P(ind,:);
-        %e=EC(ind); %Energy Consumption
-        e=GWP(ind); %Global Warming Potential
+        e=EC(ind); %Energy Consumption
+        %e=GWP(ind); %Global Warming Potential
 
         shp2D=alphaShape(p(:,1),p(:,2),step*sqrt(2));
         tri=alphaTriangulation(shp2D);
@@ -136,20 +136,20 @@ if option==3 || option==4
         zlim(lim_Z) % Apply same Z limits in all 2D sections
 
         cb=colorbar;
-        %cb.Label.String = "Energy Consumption (TJ)";
-        cb.Label.String = "Global Warming Potential (ton CO2 eq)";
+        cb.Label.String = "Energy Consumption (TJ)";
+        %cb.Label.String = "Global Warming Potential (ton CO2 eq)";
         cb.Label.Rotation=90;
-        %colormap(plasma) %Energy Consumption
-        colormap(viridis) %Global Warming Potential
+        colormap(plasma) %Energy Consumption
+        %colormap(viridis) %Global Warming Potential
 
         view(-50,10); %view(3)
-        %scatter3(x,y,z,2,EC,'filled') % Here I plot the points just for comparison
-        scatter3(x,y,z,2,GWP,'filled')
+        scatter3(x,y,z,2,EC,'filled') % Here I plot the points just for comparison
+        %scatter3(x,y,z,2,GWP,'filled')
 
         ind=(z==elevation); % indices of points with the elevation of this iteration
         p=P(ind,:);
-        %e=EC(ind); %Energy Consumption
-        e=GWP(ind); %Global Warming Potential
+        e=EC(ind); %Energy Consumption
+        %e=GWP(ind); %Global Warming Potential
 
         shp2D=alphaShape(p(:,1),p(:,2),step*sqrt(2));
         % shp2D.Points(:,2)=elevation*ones(length(shp2D.Points),1);

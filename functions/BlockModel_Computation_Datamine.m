@@ -540,13 +540,14 @@ g(1,2).no_legend();
 g.draw();
 
 %% Export NBM (optional)
-for i = 1 : size(NBM,2)
-    temp1    = NBM(i); %The number of columns of NBM
-    rocktype = temp1.RockType;
-    temp1    = rmfield(temp1,'RockType');
-    writetable(struct2table(temp1), 'NewBlockModel_Datamine.xlsx','sheet', rocktype)
-    clearvars temp1
-end
+% for i = 1 : size(NBM,2)
+%     temp1    = NBM(i); %The number of columns of NBM
+%     rocktype = temp1.RockType;
+%     temp1    = rmfield(temp1,'RockType');
+%     writetable(struct2table(temp1), 'NewBlockModel_Datamine.xlsx','sheet', rocktype)
+%     clearvars temp1
+% end
+% 
 %  Alternative: If user want to put all data in one sheet the following code can do this.
 %  for i = 1 : size(NBM,2)
 %      temp1 = NBM(i);
