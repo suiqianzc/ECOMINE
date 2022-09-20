@@ -58,21 +58,15 @@ ECOMINE comprises the following modules:
   - Select Options for Unit of Coordinates
   - Calculate and export results
   
-<p align="center"><img width=100% src="https://github.com/suiqianzc/ECOMINE/blob/master/figures/Cumulative_EnergyConsumption_GlobalWarmingPotential.png"></p> 
-  
 - __Module II__
   - Run Plot_NBM_of_Mine.m
   - Load NewBlockModel_GeoviaWhittle file 
   - Visualise results
-  
-<p align="center"><img width=100% src="https://github.com/suiqianzc/ECOMINE/blob/master/figures/ECGWP_spatial_distribution_UPL.png"></p>   
 
 - __Module III__
   - Load ECGWP_Optimal/Planar_GeoviaWhittle.mat
   - Run Example_Compare_Optimal_Planar.m
   - Visualise results
-  
-<p align="center"><img width=100% src="https://github.com/suiqianzc/ECOMINE/blob/master/figures/ECGWP_Compare_Optimal_Planar.png"></p>  
 
 New users are advised to start from running the available examples in the [examples](examples) folder, to get familiarised with the syntax and functionalities of ECOMINE. 
 
